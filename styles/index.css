@@ -1,169 +1,123 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color:  #E5E5E5;
-}    
-.Mobile{
-    display: flex;
-    max-width: 320px;
-    height: 568px;
-    background-color: #FFFFFF;
-    margin: auto;
-    margin-top: 3.5em;
-    margin-bottom: 45px;
-}
-.logo3{
-    position: absolute;
-    justify-content: space-evenly;
-}
-.content-moblie{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    font-family: Source Sans Pro;
-    font-weight: bold;
-    margin-top: 25%;
+    background-color:  #F1F3F5;
+    margin: 0;
+    padding: 0;
 
+}
+label.logo{
+    margin-left: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
     
 }
-.mobile-info{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: Source Sans Pro;
-    font-size: 0.5rem;
-    margin-top: 15%;
-    
+nav ul{
+   margin: 0;
+   padding: 0;
+   display: flex;
 }
-@media only screen, (max-width:400px) {
-    .pic3{
-       display: flex;
-       margin-top: 35%;
-
-    }
+nav i{
+    margin-right: -60%;
+    margin-top: 25px;
+    cursor: pointer;
+    left: 0;
 }
-
-.Tablet{
-    width: 100%;
-    max-width: 768px;
-    height: 1024px;
-    display: flex;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    margin-top: 3.5em;
+#check{
+    display: none;
 }
-.logo2{
-    margin: 3rem;
-    
+nav ul li {
+    list-style: none;
+    margin: 0 5px;
 }
-.link{
-    display: flex;
-    width: 303px;
-    height: 25px;
-    margin: 3rem;
-}
-.tablet2{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    font-family: Poppins;
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 15%;
-    width: 574px;
-    height: 172px;
-    
-}
-.tablet-info{
-    font-family: Source Sans Pro;
+nav ul li a{
     font-size: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-
+    text-decoration: none;
+    color: rgb(14, 11, 11);
 }
-
-@media only screen,(min-width:400px),(max-width:800px) {
-    .pic2{
-        position: absolute;
-        width:55%;
-        height: auto;   
-        margin-top: 35%;   
-        margin-left: -40%;
-        
-    }
-}
-.desktop{
-    max-width: 1440px;
-    height: 810px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    background-color: #FFFFFF;
-    margin: auto;
-    margin-top: 3.5rem;
-}
-.header{
-    font-family: Source Sans Pro;
+section{
+    padding: 3rem 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 3em;
+
 }
-.logo{
-    margin: 3em;
-}
-.text{
+text{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 10%;
-    width: 100%;
-    margin-left: -25%;
-    
-
+    align-items: center;
+    margin-top: 3.5em;
 }
-.content{
-    font-size: 5rem;
+h1{
     font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
-    white-space: 2%;
-
+    font-size: 2.25rem;
+    line-height: 40px;
+    text-align: center;
 }
-.text-info{
+p{
     font-family: Source Sans Pro;
-    font-size: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 18px;
+    text-align: center;
+    
 }
 .icon{
-    display: flex;
     position: absolute;
-    bottom: 25%;
-    margin-left: 10%;
-
-
+    padding: 0 100px;
+    margin-top: 25%;
+    width: 24px;
+    height: 24px;
+    
 }
-.pic1{
-    position: relative;
-    max-width:576px;
-    height: auto;
+.pic{
     width: 100%;
-    margin-left: -25%;
-    margin-top: 5%;
-        
 }
-@media screen and (max-width:1440px),(min-width:400px){
-    .Mobile, .desktop, .Tablet{
-        display: flex;
-        width: 100%;
 
-        
+@media (max-width:400px){
+    nav ul li a{
+        display: none;
+    }
+    .icon {
+       display: none;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:400px), (max-width:800px){
+    .icon{
+        display: none;
+    }
+    nav i{
+        display: none;
+    }
+    
+}
+@media (max-width:700px){
+    .icon{
+        display: none;
+    }
+    nav i{
+        display: none;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:700px) {
+    .icon{
+        display: flex;
+    }
+    nav i{
+        display: none;
     }
 }
